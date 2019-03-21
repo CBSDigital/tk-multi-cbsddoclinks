@@ -59,5 +59,11 @@ class AppDialog(QtGui.QWidget):
         
         # lastly, set up our very basic UI
         self.ui.context.setText("Current Context: %s" % self._app.context)
+        self.set_message()
         
-        
+    def set_message(self):
+        cbsd_core_fw = self._app.frameworks["tk-framework-cbsdcore"]
+        constants = cbsd_core_fw.import_module("constants")
+
+        message = constants.TEST_CONSTANT
+        self.ui.cbsd_message.setText(message)

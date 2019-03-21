@@ -8,8 +8,10 @@
 # agreement to the Shotgun Pipeline Toolkit Source Code License. All rights 
 # not expressly granted therein are reserved by Shotgun Software Inc.
 
+import sgtk
 
 from sgtk.platform import Application
+
 
 class StgkStarterApp(Application):
     """
@@ -38,4 +40,4 @@ class StgkStarterApp(Application):
 
         # now register the command with the engine
         self.engine.register_command("Show Starter Template App...", menu_callback)
-        
+

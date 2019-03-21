@@ -29,6 +29,12 @@ class Ui_Dialog(object):
         self.context.setObjectName("context")
         self.horizontalLayout.addWidget(self.context)
 
+        self.cbsd_message = QtGui.QLabel(Dialog)
+        self.cbsd_message.setSizePolicy(sizePolicy)
+        self.cbsd_message.setAlignment(QtCore.Qt.AlignLeading | QtCore.Qt.AlignLeft | QtCore.Qt.AlignVCenter)
+        self.cbsd_message.setObjectName("cbsd_message")
+        self.horizontalLayout.addWidget(self.cbsd_message)
+
         self.retranslateUi(Dialog)
         QtCore.QMetaObject.connectSlotsByName(Dialog)
 
