@@ -9,3 +9,4 @@
 # not expressly granted therein are reserved by Shotgun Software Inc.
 
 from . import dialog
+from . import open_cbsd_wiki
